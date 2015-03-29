@@ -1,0 +1,32 @@
+{
+    "name": "eclipsegc/classiphpy-sdk-generator",
+    "type": "library",
+    "description": "A jsdl and classiphpy based sdk generation library.",
+    "keywords": ["jsdl"],
+    "homepage": "https://github.com/EclipseGc/Classiphpy-SDK-Generator",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Kris Vanderwater"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "5.1.*",
+        "eclipsegc/classiphpy": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classiphpy\\SDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Classiphpy\\SDK\\Tests\\": "tests/"
+        }
+    }
+}
